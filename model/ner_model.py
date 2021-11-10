@@ -53,7 +53,7 @@ class NERBaseAnnotator(nn.Module):
         tokens = tokens.to(self.device)
         tags = tags.to(self.device)
         token_mask = token_mask.to(self.device)
-        metadata = metadata.to(self.device)
+        # metadata = metadata.to(self.device)
 
         batch_size = tokens.size(0)
 
